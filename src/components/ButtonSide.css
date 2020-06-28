@@ -1,0 +1,141 @@
+.icon-bar {
+  z-index: 100;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 0px 10px 32px 2px;
+  transition: all 1s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.intecbtn {
+  margin: 0px auto 5vw auto !important;
+  min-width: 200px;
+}
+
+.btn-primaryblue {
+  background: blue;
+  border: none;
+  color: white;
+}
+
+.btn-primaryblue:hover {
+  background: darkblue;
+}
+
+.btntxt {
+  padding: 9px 49px;
+}
+
+.btntxt:hover {
+  color: white !important;
+  min-width: 2000px;
+}
+
+.java {
+  border-bottom: blue 0.5vw solid !important;
+  border-radius: 0 0 0.3vw 0.3vw;
+}
+
+.netwerken {
+  border-bottom: rgb(255, 184, 3) 0.5vw solid;
+  border-radius: 0 0 0.3vw 0.3vw;
+}
+
+
+.design {
+  border-bottom: red 0.5vw solid;
+  border-radius: 0 0 0.3vw 0.3vw;
+}
+
+
+.java {
+  border-bottom: success 0.5vw solid;
+  border-radius: 0 0 0.3vw 0.3vw;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #4267B2;
+  color: white;
+}
+
+.twitter {
+  background: darkorange;
+  color: white;
+}
+
+.google {
+  background: purple;
+  color: white;
+}
+
+.linkedin {
+  background: green;
+  color: white;
+}
+
+.youtube {
+  background: red;
+  color: white;
+}
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}
+
+.tooltip-ex {
+  /* Container for our tooltip */
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+
+}
+
+.tooltip-ex-right {
+  top: 5px;
+  left: 125%;
+}
+
+.myshadow {
+  box-shadow: 0 6px 12px -6px rgba(0, 0, 0, 1);
+}
+
+.tooltip-ex-text {
+  visibility: hidden;
+  position: absolute;
+  width: 120px;
+  background-color: #555;
+  border: white solid 1px;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  z-index: 1;
+  opacity: 0;
+  width: 200px;
+  transition: opacity 1s ease;
+
+}
+
+.tooltip-ex:hover .tooltip-ex-text {
+  /* Makes tooltip visible when hovered on */
+  visibility: visible;
+  opacity: 1;
+  box-shadow: 0 6px 12px -6px rgba(0, 0, 0, 1);
+}
