@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    #green {
+        background-color: green;
+    }
+
+    #red {
+        background-color: red;
+    }
+
+    #blue {
+        background-color: blue;
+    }
+
+    #pink {
+        background-color: pink;
+    }
+
+    #purple {
+        background-color: purple;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div id="green" onmouseover="m_hover()">hello</div>
+        <div id="red">spoon</div>
+        <div id="blue">house</div>
+        <div id="pink" onmouseover="m_hover()">hi</div>
+        <div id="purple">fork</div>
+    </div>
+    <a href="tester.html"> <button  id="btn1" onclick="m_hover()">objecttester</button></a>
+    <button type="button" , id="btn2">greetings</button>
+    <script>
+        let groen = document.getElementById("green");
+        let rood = document.getElementById("red");
+        let blauw = document.getElementById("blue");
+        let rose = document.getElementById("pink");
+        let paars = document.getElementById("purple");
+        let objectsbtn = document.getElementById("btn1");
+        let greetbtn = document.getElementById("btn2");
+
+        function m_hover() {
+            groen.style.color = "white";
+            rose.style.color = "white";
+        }
+    </script>
+
+</body>
+
+</html>

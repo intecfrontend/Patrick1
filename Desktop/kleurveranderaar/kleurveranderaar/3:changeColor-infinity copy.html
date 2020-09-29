@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .colorBtn {
+            padding: 1vh;
+            border-radius: 7px;
+            color: #fefefe;
+            background: green;
+            cursor: pointer;
+        }
+
+        .colorBtn:hover {
+            background: red
+        }
+
+        button {
+            outline: none
+        }
+    </style>
+</head>
+
+<body>
+
+    <button type="button" class="hexBtn" id="hexBtn">change the color</button>
+
+    <script>
+        const colorBtn = document.querySelector('.hexBtn');
+        const bodybg = document.querySelector('body');
+        const hexNumbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
+        const hexBtn = document.getElementById('hexBtn');
+        hexBtn.addEventListener('click', getHex);
+        /*I hate myFunction*/
+
+        function getHex() {
+            let hexCol = '#';
+            for (let i = 0; i < 6; i++) {
+
+                let random = Math.floor(Math.random() * hexNumbers.length); //console.log(random);
+                hexCol += hexNumbers[random];
+                console.log(hexCol);
+
+            }
+            bodybg.style.backgroundColor = hexCol;
+        }
+
+        /*console.log(i); i end at 4*/
+    </script>
+
+</body>
+
+</html>

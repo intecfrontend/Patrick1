@@ -1,0 +1,65 @@
+<!-- document.getElementById("text").innerHTML = x;
+probeer let te gebruiken (of const)
+-->
+<div id="titel">Presentatie v/d Salarissen </div>
+<button id="btn">Random Result</button>
+<br>
+<h1 id="salaryDiv"></h1>
+
+<h2 id="empDiv"></h2>
+
+<script>
+    let empQS = document.querySelector('#emp');
+    let salQS = document.querySelector('#salary');
+    let empBtnQS = document.querySelector('#btn');
+
+    empQS = "";
+    salQS = 0;
+
+    empBtnQS.addEventListener('click', displaySalary);
+    //Json-file
+    let empLS = [{
+        name: "Jo",
+        salary: "2000;-",
+    }, {
+        name: "Johan",
+        salary: "1900;-",
+    }, {
+        name: "Eric",
+        salary: "2100;-",
+    }, {
+        name: "Marie",
+        salary: "3000;-",
+    }, {
+        name: "Juliette",
+        salary: "1300;-",
+    }, {
+        name: "Bas",
+        salary: "6000;-",
+    }, ]; //every {} is an index
+
+    function displaySalary() {
+        let number = Math.floor(Math.random() * empLS.length);
+        console.log(number);
+        salaryDiv.innerHTML = empLS[number].salary;
+        console.log(number);
+
+        empDiv.innerHTML = empLS[number].name;
+    }
+
+
+
+
+    /*
+        document.getElementById("btn").onclick = function () {
+            if (i < colors.length) {
+                x += colors[i++] + "<br>";
+                bodybg.style.backgroundColor = colors[i - 1];
+
+            } else {
+                colorBtn.style.fontSize = "300px";
+                colorBtn.style.borderRadius = "30px";
+                colorBtn.innerHTML = "stop";
+            }
+        }*/
+</script>
