@@ -1,0 +1,91 @@
+.App {
+  text-align: center;
+}
+
+.socbtn__img {
+  width: calc(4px + 1vw);
+  margin: 7px 6px 3px 7px;
+}
+.socbtn__btn {
+  margin: 0 !important;
+  width: 100%;
+}
+#fb {
+  background: rgb(59, 89, 152) !important;
+  border-radius: 0px 8px 0px 0px;
+}
+#ph {
+  background: orange !important;
+}
+#ml {
+  background: cyan !important;
+}
+#yt {
+  background: red !important;
+}
+#lc {
+  background: #5890ff;
+  border-radius: 0px 0px 8px 0px;
+}
+
+.socbtn__btnwrapper {
+  height: calc(20px + 1vw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+.socbtn__btncont {
+  border-radius: 0px 8px 8px 0px;
+  top: 30vw;
+  border: rgb(75, 42, 9, 0.2) 1px solid;
+  left: -4px;
+  position: fixed;
+  width: calc(30px + 1vw);
+  box-shadow: 4px 3px 4px rgba(28, 14, 3, 0.2), -4px 0 2px;
+}
+.socbtn__btncont:hover {
+  cursor: pointer;
+}
+
+.socbtn__linkh4 {
+  margin-top: 6px;
+  margin-left: calc(30px + 1vw);
+}
+.socbtn__linka {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+}
+.socbtn__btnuit {
+  border-radius: 0px 8px 8px 0px;
+  border: rgb(75, 42, 9, 0.2) 1px solid;
+  background: beige;
+  z-index: -100;
+  left: -4px;
+  position: fixed;
+  width: calc(230px + 1vw);
+  height: calc(20px + 1vw);
+  /* display: none; */
+}
+#uit1 {
+  top: 30vw;
+}
+#uit2 {
+  top: calc(20px + 31vw);
+}
+#uit3 {
+  top: calc(40px + 32vw);
+}
+#uit4 {
+  top: calc(60px + 33vw);
+}
+#uit5 {
+  top: calc(80px + 34vw);
+  height: calc(0px + 20vw);
+  width: calc(460px + 2vw);
+}
+.socbtn__btnuitclose {
+  left: 100vw;
+  top: 100vh; 
+  /* transition: all 10s;*/
+}
