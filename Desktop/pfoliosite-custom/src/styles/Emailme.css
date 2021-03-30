@@ -1,0 +1,78 @@
+.emailcont {
+  margin-top: 60px;
+}
+#Mailme {
+  margin: 60px 0px 50px 0px;
+  color: white;
+  z-index: 999;
+}
+
+#Mailme:after {
+  background: white;
+}
+#Mailmebg {
+  position: relative;
+  width: 100vw;
+  height: 90vh;
+  background: url(../images/smileb.jpg);
+  background-size: cover !important;
+  padding: 15px;
+  overflow: hidden !important;
+}
+#form {
+  z-index: 999 !important;
+}
+#smile-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(33, 125, 187, 0.8);
+  z-index: 1 !important;
+}
+#smile-overlaycont {
+  position: relative;
+}
+
+#outlined-basic {
+  width: 70vw;
+  height: 110px;
+  border-radius: 7px;
+}
+
+.TextFieldcont {
+  display: flex;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 7px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  width: 80vw;
+  margin: 0 auto;
+  height: 350px;
+  /* background: gold; */
+}
+.TextFlexer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 70vw;
+  position: absolute;
+  left: 15vw;
+}
+.TextFieldwrap {
+  justify-content: space-between;
+  height: 70px;
+  top: 170px;
+}
+.TextFieldwrap2 {
+  height: 140px;
+  top: 240px;
+  padding-bottom: 80px;
+}
+.TextFldinner {
+  top: 420px;
+  justify-content: flex-end;
+}

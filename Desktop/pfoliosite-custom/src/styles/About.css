@@ -1,0 +1,108 @@
+* {
+  font-family: lato;
+}
+
+.shadow-about {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.mepiccont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 120px;
+  width: 100%;
+  margin-bottom: -15px;
+  margin-top: -20px;
+  padding: 15px;
+}
+
+.mepicwrap {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+}
+.mepicwrap:hover {
+  cursor: pointer;
+  height: 270px;
+  width: 270px;
+  z-index: 998;
+  transition: all 1s;
+}
+
+#about-overlay {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(33, 125, 187, 0.6);
+  z-index: 1;
+  position: gotcha;
+}
+
+#about {
+  padding: 75px 15px;
+  border-bottom: 1px solid #dcd9d9;
+}
+#about h2 {
+  color: #374054;
+}
+#about p {
+  text-align: justify;
+  font-weight: 400;
+}
+#education {
+  padding: 50px 15px 20px 15px;
+  border-bottom: 1px solid #dcd9d9;
+  text-align: center;
+}
+#education h2 {
+  color: #374054;
+  margin-bottom: 50px;
+}
+.education-block {
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  padding: 15px;
+  border: 1px solid #dcd9d9;
+  text-align: left;
+}
+.education-block h3 {
+  font-weight: 500;
+  float: left;
+  margin: 0;
+  color: #374054;
+}
+.education-block span {
+  color: #74808a;
+  float: right;
+}
+.education-block h4 {
+  color: #74808a;
+  clear: both;
+  font-weight: 500;
+  margin: 0 0 15px 0;
+}
+.education-block p,
+.education-block ul {
+  margin: 0;
+  color: #74808a;
+  font-size: 0.9em;
+}
+.education-block ul {
+  padding: 0 0 0 15px;
+}
+#projects {
+  padding: 50px 15px;
+  border-bottom: 1px solid #dcd9d9;
+  text-align: center;
+}
+#projects h2 {
+  color: #374054;
+  margin-bottom: 50px;
+}

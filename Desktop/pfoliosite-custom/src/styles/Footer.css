@@ -1,0 +1,90 @@
+.copyright {
+  padding-top: 20px;
+}
+.copyright p {
+  margin: 0;
+  color: #74808a;
+}
+.top {
+  text-align: center;
+}
+.top span {
+  cursor: pointer;
+  display: block;
+  margin: 15px auto 0 auto;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 3px solid #b9bfc4;
+  text-align: center;
+}
+.top i {
+  color: #74808a;
+}
+.social {
+  text-align: right;
+}
+.social ul {
+  margin: 5px 0 0 0;
+  padding: 0;
+}
+.social li {
+  display: inline-block;
+  font-size: 1.25em;
+  list-style: none;
+}
+.social a {
+  display: block;
+  color: #74808a;
+  padding: 10px;
+}
+.social a:hover {
+  color: #3498db;
+}
+.fa-envelope {
+  font-size: 18px;
+}
+.phone {
+  padding-top: 20px;
+  color: #74808a;
+}
+#to-top {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  border-radius: 50%;
+  color: #74808a;
+  border: 3px solid lightgray;
+  width: 25px;
+  height: 25px;
+}
+.top {
+  padding-top: 10px;
+}
+#to-top:hover {
+  color: #3498db;
+  background: #3498db;
+  z-index: 999;
+  cursor: pointer;
+  color: white;
+  transition: all 1s ease-in-out;
+  border: 3px solid #3498db;
+}
+@media screen and (max-width: 633px) {
+  .social {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 633px) {
+  .social {
+  }
+}
+
+.fa-map-markermap{
+  color: red;
+  height: 30px;
+  width: auto;position: absolute; transform: translate(-50%, -100%)
+}

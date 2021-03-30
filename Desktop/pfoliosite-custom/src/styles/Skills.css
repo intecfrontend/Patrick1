@@ -1,0 +1,29 @@
+.SkillsUl > li {
+  list-style-type: none;
+  color: white;
+  background: lightgray;
+  margin: 10px 0px;
+  margin-right: 7px;
+  padding: 10px;
+  font-weight: 900;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.Skillsimp {
+  color: #374054 !important;
+  font-weight: 400 !important;
+}
+
+.SkillsUl {
+  padding-right: 27px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+#skills{
+  margin: 60px 0px 50px 0px;
+}

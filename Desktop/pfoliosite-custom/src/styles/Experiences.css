@@ -1,0 +1,150 @@
+.scroller {
+  scroll-behavior: smooth;
+}
+.bodyprim {
+  background: #27293d;
+  border-radius: 10px;
+  border: lightgray 1px solid;
+  padding: 20px 20px 15px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+#badgedark {
+  background: #4f537b;
+  z-index: 999;
+  margin-bottom: 20px !important;
+}
+.bodysec {
+  background: white;
+  border-radius: 10px;
+  border: lightgray 1px solid;
+  padding: 20px 20px 15px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+.e6cont {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: flex-end;
+  padding: 10px;
+}
+.effect5 {
+  z-index: 999;
+  width: 100%;
+  height: auto;
+  bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.effect6 {
+  z-index: 997;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  bottom: 100px;
+  background: #3498db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.effect6:hover {  
+  border: 1.6px solid white;
+  cursor: pointer;  
+}
+.effect5:hover {
+  cursor: pointer;
+  background: #3498db;
+}
+
+.effect6:active {
+  background: #2ecc71;
+}
+.programme {
+  text-align: left;
+  margin-left: 35%;
+}
+.pcimg {
+  width: 400px;
+}
+.classpicwrap {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+}
+.percentpic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.percentpicwrap {
+  width: 100%;
+  object-fit: cover;
+}
+.classpicwrap:hover {
+  cursor: pointer;
+  height: 270px;
+  width: 270px;
+  z-index: 998;
+}
+.hovercontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  width: 180px;
+  position: absolute;
+  left: -153px;
+  top: -60px;
+  position: absolute;
+}
+.linker {
+  text-decoration: underline;
+  cursor: pointer;
+  z-index: 999;
+}
+.linker:hover {
+  color: white;
+}
+.hr {
+  border-bottom: 2px solid #778ba5;
+  width: 60%;
+  margin-bottom: 0.5vw;
+  padding-bottom: 0.5vw;
+  margin-left: -3vw;
+  opacity: 0.1;
+  list-style-type: none;
+}
+.inbetween {
+  padding-top: 2vw;
+  padding-bottom: 3vw;
+  font-size: 16px;
+}
+
+li {
+  font-size: 13px;
+  line-height: 28px;
+}
+.graish {
+  color: #778ba5;
+}
+
+.programme3 {
+  margin-top: -1vw;
+  font-size: 13px;
+}
+.Exp_subtit {
+  color: Black;
+}
+
+#darkerTLS {
+  color: Black;
+}

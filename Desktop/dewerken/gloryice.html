@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .heroimg {}
+
+  .title {
+    font-family: "dancing script";
+    font-weight: 700;
+    width: 100vw;
+    margin-top: -5vw;
+    font-size: 20vw;
+    text-align: center;
+    color: darkred;
+    position: absolute;
+  }
+
+  .kies {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: magenta;
+    background: gold;
+    width: 100vw;
+    text-align: center;
+    font-size: 4vw;
+    margin-top: -1vw;
+    z-index: 100;
+  }
+
+  .besteld {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: gray;
+    width: 100vw;
+    text-align: center;
+    font-size: 1.5vw;
+  }
+
+  .vcont {
+    border: orange 8px solid;
+
+  }
+
+  .myimg {
+    border: red 8px solid;
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .ice {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #idstrawimg {
+    width: 14vw;
+    height: auto;
+  }
+
+  .glow {
+    color: #fff;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+  .hero {}
+</style>
+
+<body>
+  <div class="title glow">glory-ice</div>
+  <div class="hero">
+    <img class="heroimg" src="icehero.jpg" alt="ice pic">
+  </div>
+  <div class="kies">Kies je smaak!</div>
+  <div class="ice">
+    <span onclick="FV()" class="vcont">
+      <img class="vanimg myimg" id="idvanimg" src="van.jpg" alt="ice pic"></span>
+    <img class=" pistimg myimg" id="idpistimg" src="pist.jpg" alt="ice pic">
+    <img class="manimg myimg" id="idmanimg" src="mang.jpg" alt="ice pic">
+    <img class="strawimg myimg" id="idstrawimg" src="straw.jpg" alt="ice pic">
+  </div>
+  <div class="besteld">Je wenst een ijsje met <br>1 bol vanille, 1bol pistache en 1 bol mango.</div>
+  <script>
+    function FV() {
+      console.log("vanille geclicked")
+    };
+  </script>
+</body>
+
+</html>
