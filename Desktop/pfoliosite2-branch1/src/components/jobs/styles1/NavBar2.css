@@ -1,0 +1,43 @@
+.navbarcont {
+  position: fixed !important;
+  z-index: 999;
+  margin-left: 4vw;
+  width: 92vw;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  background: linear-gradient(
+    to bottom,
+    lightblue 1%,
+    #3498db 10%,
+    #3498db 100%
+  );
+  border: 1px rgba(255, 255, 255, 0.1) solid;
+  border-width: 0px 1px 1px 2px;
+}
+
+.c-main__contact {
+  text-decoration: none !important;
+}
+
+#responsive-navbar-nav {
+  margin-top: 10px !important;
+  width: 92vw;
+  padding: 0vw 2vw;
+}
+.phoneLink {
+  font-size: 16px !important;
+  padding-top: 10px;
+  height: 33px !important;
+  cursor: pointer;
+}
+.topNav {
+  padding: 5px;
+}
+.activefocus {
+  color: purple !important;
+}
+@media screen and (max-width: 765px) {
+  #responsive-navbar-nav {
+    border-top: rgba(255, 255, 255, 0.1) 1px solid;
+  }
+}

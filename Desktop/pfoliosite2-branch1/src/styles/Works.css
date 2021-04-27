@@ -1,0 +1,67 @@
+.Parallax {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  width: 100vw;
+  position: relative;
+}
+
+#boud-overlay {
+  z-index: 0;
+  width: 100vw;
+  height: auto;
+  background: url(../images/boudc.jpg);
+  background-size: cover !important;
+  overflow: hidden !important;
+}
+
+
+.emailcont {
+  margin-top: 0px;
+}
+#Mailme,
+#works {
+  margin: 0px 0px 50px 0px;
+  color: white;
+  z-index: 100;
+  padding-top: 140px;
+}
+
+#Mailme:after {
+  background: white;
+}
+
+#works:after {
+  background: white;
+  margin-top: -50px;
+}
+#Mailmebg {
+  position: relative;
+  top: 60px;
+
+  width: 100vw;
+  height: 100vh;
+  background: url(../images/smileb.jpg);
+  background-size: cover !important;
+  padding: 15px;
+  overflow: hidden !important;
+}
+#form {
+  z-index: 999 !important;
+  margin-top: 20px;
+}
+#smile-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(33, 125, 187, 0.8);
+  z-index: 1 !important;
+  top: 60px;
+}
+#smile-overlaycont {
+  position: relative;
+}

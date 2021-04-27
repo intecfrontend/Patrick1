@@ -1,0 +1,60 @@
+.container {
+  max-width: 650px;
+  margin: 50px auto;
+}
+.containerbg {
+  background: rgb(235, 235, 235);
+}
+
+
+p {
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 4rem;
+  margin: 0 0 0 30px;
+  color: white;
+}
+/* lineleft */
+.timeline:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 4px;
+  height: 100%;
+  background:#778ba5; 
+  background-image: linear-gradient(#778ba5, #778ba5, #ccd3e3, rgb(235, 235, 235));
+
+}
+.timeline .timeline-container {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.timeline .timeline-container .timeline-icon i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.timeline .timeline-container .timeline-icon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.timeline-subtitle {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 13px;
+  color: white;
+}
+.timeline-title {
+  padding-top: 3vw;
+}

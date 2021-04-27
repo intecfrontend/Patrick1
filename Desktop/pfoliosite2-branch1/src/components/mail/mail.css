@@ -1,0 +1,44 @@
+.swal__container,
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.alert__img {
+  height: 200px;
+  width: 270px;
+  margin-top: -20px !important;
+  padding-top: 0px !important;
+}
+.alert__text {
+  height: auto;
+  width: 100%;
+}
+#closeBtn {
+  display: block;
+  position: relative;
+  margin: 5px auto;
+  padding: 7px;
+  border: 0 none;
+  width: 70px;
+  font: 0.7em verdana, arial;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background-color: red;
+  border-radius: 3px;
+  text-decoration: none;
+}
+.swal-button {
+  background-color: red;
+  border: none;
+  color: white;
+  font-weight: bolder;
+  padding: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 6px;
+  /* https://code.tutsplus.com/tutorials/creating-pretty-popup-messages-using-sweetalert2--cms-30662 */
+}

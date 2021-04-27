@@ -1,0 +1,25 @@
+.intecad {
+  height: 24vw;
+  width: auto;
+  border-radius: 10px;
+  margin-left: -15px;
+}
+.intecadwrapper {
+  display: flex;
+  justify-content: left;
+  padding: 0px;
+}
+@media screen and (max-width: 1000px) {
+  .intecadwrapper {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin-top: 2vw;
+  }
+}
+
+.intecdoor {
+  margin-left: 1vw;
+}
+.intecbook {
+}

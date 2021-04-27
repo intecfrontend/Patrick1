@@ -1,0 +1,129 @@
+#Modalheading {
+  width: 100%;
+  margin-bottom: -100px;
+  text-align: center;
+}
+#plus {
+  margin-right: -30px;
+}
+#firstModalTitel {
+  margin-left: 50px;
+}
+.project-centertop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.project-centersnd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.project-centerthd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.works__fat {
+  padding: 0px 0px;
+}
+
+.project {
+  display: flex;
+
+  background: rgba(235, 235, 235, 0.8);
+  margin: 20px 0px;
+  padding: 0px;
+  width: 70vw !important;
+  height: 24vw;
+}
+
+.project-image {
+  width: 24vw !important;
+  padding: 0px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.project-info {
+  padding: 20px 20px 10px 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.projet-center {
+  background: black;
+  width: 97vw;
+  display: flex;
+  justify-content: center;
+}
+.project-view {
+  padding-top: 1.5vw;
+  cursor: pointer;
+}
+.modalimg__opschuif {
+  margin: 0px 35px;
+}
+.Modal__item {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+}
+.Modal__cont {
+  color: #374054;
+}
+.Modal__buttcont {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  z-index: 999;
+  top: 19vw;
+  padding: 0px !important;
+}
+.Modal__butt {
+  color: white;
+  z-index: 999;
+}
+
+.works__subheading {
+  font-size: 18px;
+  font-weight: 100;
+}
+.works__fat {
+  padding: 0px 0px;
+}
+.projectimagewrapper {
+  padding: 0px !important;
+  margin: 0px !important;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.nopad {
+  padding: 0px !important;
+}
+.works__txt {
+  font-size: 13px;
+  line-height: 2.8vw;
+}
+@media screen and (max-width: 992px) {
+  .works__txt {
+    line-height: 4.8vw;
+  }
+  .project {
+    height: auto;
+    margin-left: 10px !important;
+  }
+  .project-image {
+    margin-top: 20px;
+  }
+
+  .project-image {
+    height: 30vw;
+    width: 30vw !important;
+  }
+}
