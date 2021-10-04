@@ -1,0 +1,62 @@
+.NavBar {
+  background: black;
+}
+
+.NavBar nav ul li {
+  display: inline-block;
+  margin: 1.5vw;
+}
+.NavBar nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+.NavBar nav ul li {
+  border-bottom: 5px solid purple;
+}
+.NavBar .MobileNavigation {
+  display: none;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.Hamburger {
+  size: 40px;
+  color: white;
+  margin: 0vw 5vw;
+  cursor: pointer;
+}
+@media (max-width: 990px) {
+  .NavBar .Navigation {
+    display: none;
+  }
+  .NavBar .MobileNavigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 90px;
+  }
+  .NavBar nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: red;
+    width: 30%;
+    padding: 60px 20px;
+    right: 0;
+    top: 0px;
+  }
+  .NavBar nav ul li {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .NavBar {
+    background: none;
+  }
+  .red {
+    color: red;
+  }
+  .white {
+    color: white;
+  }
+}
