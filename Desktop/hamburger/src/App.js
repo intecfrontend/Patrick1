@@ -9,7 +9,7 @@ function App() {
         <MobileNavigation/>
         <Navigation/>
       </div>
-    </div>
+    </div>git remote add origin git@github.com:FrontEnd-React3/navbarresponsive.git
   );
 }
 
