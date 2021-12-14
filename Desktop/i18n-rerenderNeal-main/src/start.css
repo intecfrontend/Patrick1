@@ -1,0 +1,81 @@
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+}
+
+.content {
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.neallogo {
+  transform: translateY(-55vw);
+  opacity: 0;
+}
+h4 {
+  transform: translateY(-5vw);
+  opacity: 0;
+}
+.flags {
+  opacity: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  margin-top: -10px;
+}
+#enflag,
+#frflag,
+#nlflag {
+  height: 50%;
+  width: auto;
+  object-fit: cover;
+  border-radius: 3px;
+  margin: 3px;
+}
+.flagwrapper {
+  height: 50px;
+  width: 40px;
+  top: 10px;
+  /* background-color: gold; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img:first-of-type {
+  width: 100px;
+}
+
+.lang {
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.lang img {
+  width: 50px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  cursor: pointer;
+}
+
+.lang img:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 40px;
+}
+
+.lang img:last-of-type {
+  margin-right: 0;
+}
+
+p {
+  font-size: 8px;
+  margin: -20px 0 20px 0;
+}
