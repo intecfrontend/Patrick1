@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    /*
+    let a = "red";
+    let b = "black";
+
+    let c = a;
+
+    a = b;
+
+    b = c;
+
+    console.log("a= " + a);
+    console.log("b= " + b);
+    /*
+    console.log(-- -- --);
+
+
+    function islandscape(width, height) {
+        if (width > height) ? true : false;
+    }
+
+    function islandscape(width, height) {
+        return (width > height);
+    }
+
+
+    console.log(sum(10));
+
+    function sum(limit) {
+        let sum = 0;
+        for (let i = 0; i <= limit; i++) // i++  , ++i 
+        {
+            if (i % 3 === 0 || i % 5 === 0) {
+                sum += i; // sum = sum + i
+            }
+        }
+        return sum;
+    }
+
+
+
+*/
+
+
+    function multiply(x, y) {
+      var a = x || 1;
+      var b = y || 1;
+      console.log(a * b);
+    }
+
+    multiply(10, 20);
+
+    //ES6, avoiding NAN
+
+    const add = (c = 1, d = 1) => {
+      console.log(c + d);
+    };
+
+    add();
+
+
+
+    const list = [bacon, ham, eggs, tomatoes];
+    //foreach
+    list.forEach((product, index) => {
+      console.log(`product with number ${index} is ${product}`);
+    });
+    // foreach loops and map makes a copy of it which we can modify, foreach does not return anything
+    //map
+    const maplist = list.map(item => {
+      return item + "new";
+    })
+    //you can get rid of {} and returnkey because there is only one line of code
+    console.log(maplist);
+
+    const filterlist = list.filter(item => {
+      return item === "eggs";
+    })
+    //you can get rid of {} and returnkey because there is only one line of code
+    console.log(filterlist);
+
+    var list = ["foo", "bar"];
+    list[2] = "baz"; // add element "baz" to the index position 2 in the array
+    list[3] = "qux";
+    ["foo", "bar", "baz", "qux"] // result
+
+    var list = ["foo", "bar"];
+    list[list.length] = "baz"; // add element "baz" to the end of the array
+    ["foo", "bar", "baz"] // result
+
+    var list = ["foo", "bar"];
+    var newlist = list.concat(["baz", "qux"]);
+    ["foo", "bar", "baz", "qux"] // newlist result
+
+    var list = ["foo", "bar"];
+    var newlist = list.concat("baz", "qux");
+    ["foo", "bar", "baz", "qux"] // newlist result
+
+    array.splice(start, deleteCount[, item1[, item2[, ...]]])
+    If you want to insert an element(or elements) into a particular point somewhere within the array,
+      besides the beginning or end, then you should most likely be using the splice() method.
+
+    To use splice() your code should look like this:
+
+
+      var list = ["foo", "bar"];
+    list.splice(1, 0, "baz"); // at index position 1, remove 0 elements, then add "baz" to that position
+    // element "bar" will now automatically be moved to index position 2
+    ["foo", "baz", "bar"] // result
+
+
+    var list = ["foo", "bar"];
+    list.splice(1, 0, "baz", "qux");
+    ["foo", "baz", "qux", "bar"] // result
+
+
+    var list = ["foo", "bar"];
+    list.push("baz");
+    ["foo", "bar", "baz"] // result
+
+    var list = ["foo", "bar"];
+    list.push("baz", "qux", "etcetera");
+    ["foo", "bar", "baz", "qux", "etcetera"] // result
+
+    var list = ["foo", "bar"];
+    list.unshift("baz");
+    ["baz", "foo", "bar"] // result
+
+    var list = ["foo", "bar"];
+    list.unshift("baz", "qux");
+    ["baz", "qux", "foo", "bar"] // result
+
+    //https://www.hostingadvice.com/how-to/javascript-add-to-array/
+  </script>
+</body>
+
+</html>

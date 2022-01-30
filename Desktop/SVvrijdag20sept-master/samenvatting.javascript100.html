@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="gegevensp">testp</p>
+    <h4 id="gegevensh">test</h4>
+    <h4 id="gegevensh1">test1</h4>
+    <h4 id="gegevensh2">test2</h4>
+    <h4 id="gegevensh3">test3</h4>
+
+
+
+    <script>
+        let naam = "Ben";
+        let leeftijd = 54;
+        let samen = "Mijn naam is " + naam + "; " + leeftijd + " jaar oud";
+
+        let gegevensptag = document.getElementById("gegevensp");
+        let gegevenshtag = document.getElementById("gegevensh");
+
+        gegevensptag.innerHTML = samen;
+        gegevenshtag.innerHTML = `Mijn naam is ${naam} en ik ben ${leeftijd}`;
+
+        if (leeftijd > 18) {
+            gegevensh1.innerHTML += ` dus meerderjarig`
+        } else if(leeftijd = 18)  {
+            gegevensh2.innerHTML += ` net meerderjarig`
+        }
+
+        else  {
+            gegevensh2.innerHTML += ` je bent minderjarigjarig`
+        }
+
+        for (let i = 2010; i <= 2022; i++) {
+            gegevensh3.innerHTML += `<h3>We zijn in het jaar: ` + i;
+        }
+    </script>
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time.</button>
+
+    <p id="demo"></p>
+
+</body>
+
+</html>

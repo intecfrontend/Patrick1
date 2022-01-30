@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //vroeger (for (var i = 0; i < list.length; i++)
+    /* var naam = "Eddy";
+    console.log("Hello" + naam);
+*/
+    /*
+        //ES6 (gebruik const ipv let als je de variabele niet zal veranderen, voornamen blijven constant)
+        const naam = "Eddy";
+        console.log(`Hello ${naam}`)
+        //ES6 (backticks kunnen ook gebruikt worden bij meerdere lijnen)
+    */
+    /*
+        //Object literals
+
+        function getBook(title, author) {
+          return {
+            title: title,
+            author: author
+            //ES6 you can write title, autor do not repeat yourself
+          };
+        }
+
+        var book = getBook("Harry Potter", "JK");
+        console.log(book);
+    */
+    /*
+    //object deconstruction
+    var user = {
+        name: "Eddy",
+        age: 25
+        };
+    var myName = user.name;
+
+    console.log(myName);
+
+    //ES6
+    */
+    /*
+        const list = {
+          name: "Shopping List",
+          items: ["milk", "bread"]
+        }
+        const {
+          name,
+          items
+        } = list;
+        console.log(name, items[1]);
+    */
+    /*
+    // gebruik van this.xxx
+        var user = {
+          name: "Eddy",
+          age: 25,
+          sayName: function () {
+            console.log('My name is' + this.name);
+
+          }
+        };
+
+        user.sayName();
+        //als je de functie aanroept kijk links, vervang dat woord (user) door de this
+    */
+    /*
+
+        // gebruik van that.xxx function inside function
+        var user = {
+          name: "Eddy",
+          age: 25,
+          sayName: function () {
+            console.log('My name is' + this.name);
+            var that = this;
+            var nameAge = function () {
+              console.log("Myname is " + that.name + "and my age is " + that.age);
+            };
+
+            nameAge();
+          }
+        };
+        user.sayName();*/
+    /*
+         //ES6 copy this and start html boilerplate  here
+  <p id="demo">test</p>
+  <script>
+    const user = {
+      name: "Eddy",
+      age: 25,
+      sayName: function () {
+        console.log(`My name is ${this.name}`);
+        const nameAge = () => {
+          return (`My name is ${this.name} and my age is ${this.age}`);
+        };
+        //nameAge();
+        document.getElementById("demo").innerHTML = nameAge(); // sayName;
+
+      }
+    };
+    user.sayName();
+  </script>
+    /*
+        button.addEventListener('click', function(){ this /*dit is dus de button, links van het punt, 
+            bij het invoegen van een andere functie var addFade = function(){this.style.display = "none"} verliest this zijn betekenis 
+            wil je het toch dan moet je dit programmeren*/
+    /*
+        });*/
+    /*
+            button.addEventListener('click', function(){ this /*dit is dus de button, links van het punt, 
+                bij het invoegen van een andere functie var addFade = () => {this.style.display = "none"} verliest this zijn betekenis 
+                wil je het toch dan moet je met var that = this this ervoor werken of dit programmeren*/
+    /*dus je doet de function weg en schrijft een => aan de andere kant*/
+
+  </script>
+</body>
+
+</html>
