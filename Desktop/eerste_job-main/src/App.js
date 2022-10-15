@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Search from "./pages/Searchpage";
 // import Contact from "./pages/Contact";
 // import NoPage from "./pages/NoPage";
+// import NoPage from "./pages/NoPage";
 
 export default function App() {
   return (
