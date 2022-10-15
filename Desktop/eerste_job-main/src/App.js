@@ -2,9 +2,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Search from "./pages/Searchpage";
-// import Contact from "./pages/Contact";
-// import NoPage from "./pages/NoPage";
-// import NoPage from "./pages/NoPage";
+
 
 export default function App() {
   return (
@@ -12,10 +10,11 @@ export default function App() {
       <Routes>
         <Route>
           <Route exact path='/' element={<Home />} />
+          <Route exact path='/' element={<Home />} />
+          <Route path="search" element={<Search />} />
           <Route path="search/:query" element={<Search />} />
-          {/* <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<NoPage />} /> */}
         </Route>
+
       </Routes>
     </BrowserRouter>
   );

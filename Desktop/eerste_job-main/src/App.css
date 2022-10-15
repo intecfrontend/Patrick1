@@ -157,11 +157,7 @@
   background: var(--blue);
   border-radius: 0px 3px 3px 0px;
   cursor: pointer;
-}
-.ONntwk__sidebutton:hover {
-  border: red 10px solid;
-  position: relative;
-  z-index: 999;
+  /* transition: all 5s; */
 }
 
 .ONntwk__laatst {
