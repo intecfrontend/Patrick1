@@ -5,12 +5,11 @@ import ONnetwerklogo from "../assets/ONnetwerk.svg"
 import { Link } from 'react-router-dom'
 import { stringify } from 'querystring';
 
-function Inputfield(props) {
+function Inputfield({btntxt, inputplaceholder}) {
   const [BladQuery, setBladQuery] = useState('');
-  const bladQuery = props.BladQuery;
 
 
-  console.log('value3 is:' + (JSON.stringify(bladQuery)));
+  // console.log('value3 is:' + (JSON.stringify(bladQuery)));
 
 
   const handleChange = event => {
@@ -32,14 +31,14 @@ function Inputfield(props) {
             name="BladQuery"
             onChange={handleChange}
             value={BladQuery}
-            className="ONntwk__input" placeholder="Zoek naar een magazine, catalogus of infoblad  " type="text" />
+            className="ONntwk__input" placeholder={inputplaceholder} type="text" />
           <Link className="ONntwk__sidebutton" to={`search/${BladQuery}`}>
 
 
             <img src={searchIcon} alt="searchIcon" className="Nntwk__searchIcon" />
           </Link>
         </div>
-        <div className="ONntwk__laatst">Laatst bekeken.</div>
+        <div className="ONntwk__laatst">{btntxt}</div>
       </div>
     </>
   )

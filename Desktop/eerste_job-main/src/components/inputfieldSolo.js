@@ -11,7 +11,7 @@ function InputSolo(props) {
   const bladQuery = props.BladQuery;
 
 
-  console.log('value3 is:' + (JSON.stringify(bladQuery)));
+  // console.log('value3 is:' + (JSON.stringify(bladQuery)));
 
 
   const handleChange = event => {

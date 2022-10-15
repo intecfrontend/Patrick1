@@ -118,6 +118,7 @@
 .ONntwk__inputwrapper {
   display: flex;
   justify-content: center;
+  
   height: auto;
   width: auto;
   top: 300px;
@@ -163,6 +164,9 @@
 .ONntwk__laatst {
   font-size: 10px;
   padding-left: 10px;
+}
+.ONntwk__laatstHider {
+display: none
 }
 .ONntk__header {
   display: flex;

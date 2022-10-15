@@ -12,7 +12,7 @@ function Home(props) {
 
       <div className="ONntwk__main">
         <Header />
-        <Input />
+        <Input btntxt={"Laatst bekeken"} inputplaceholder={"Zoek naar een magazine, catalogus of infoblad "}/>
         <div className="ONntwk__carouselwrapper ">
           <ProductGallery />
           {/* <Footer /> */}
