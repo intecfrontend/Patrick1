@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 
 import styled from 'styled-components';
 import Item from './Item-magazine';
+import Savelogo from './Item-magazine';
 import axios from 'axios'
 // .Trd__checkwrapper {
 //   display: grid;
@@ -467,23 +468,7 @@ const Firmaitem = () => {
       <Wrapper>
         <Main>
           <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
+     
         </Main>
       </Wrapper>
     </>

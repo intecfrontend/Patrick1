@@ -1,5 +1,6 @@
 import React from 'react'
-import cornericon from "./cornericon.svg"
+import savelogo from "./magazines_assets/savelogo.svg"
+import ADlogo from "./magazines_assets/ADdelhaizelogo.svg"
 import '../../App.css';
 import styled from 'styled-components';
 
@@ -48,6 +49,10 @@ function Magazineitem() {
 
       <ItemBuitenBorder>
         <ItemBorder>
+
+        <img src={savelogo} className="MAG_savelogo" alt="savelogo" />
+        <img src={magazine1} className="MAG_magazine" alt="magazine" />
+
 
 
           <div className="ONntwk__buttonwrapper ">
