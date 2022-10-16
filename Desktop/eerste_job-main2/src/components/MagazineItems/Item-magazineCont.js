@@ -30,7 +30,7 @@ const Main = styled.div`
       flex-wrap: wrap;
       align-content: flex-start;
       justify-content: center;
-      gap: 10px
+      gap: 10px;
 `;
 
 const Firmaitem = () => {
