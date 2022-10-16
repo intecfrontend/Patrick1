@@ -1,9 +1,12 @@
 import React from 'react'
+
 import savelogo from "./magazines_assets/savelogo.svg"
+import boek from "./magazines_assets/boek.svg"
 import ADlogo from "./magazines_assets/ADdelhaizelogo.svg"
-import magazine1 from "./magazines_assets/mag1.jpg"
 import '../../App.css';
 import styled from 'styled-components';
+import { Daata } from "./data";
+
 
 const ItemBuitenBorder = styled.div`
      border-radius: 10px;
@@ -19,7 +22,7 @@ const ItemBuitenBorder = styled.div`
 `;
 const ItemBorder = styled.div`
      Border: rgba(99, 99, 99, 0.2) 1px solid;
-     border-radius: 10px;
+     border-radius: 10px;  overflow: hidden; /* Hide scrollbars */
      width: 213px;
       height: 280px;
       display: flex;
@@ -58,29 +61,33 @@ z-index:999;
 background: white;
 `;
 const Datetxt = styled.div`
-color: lightgray;
-font-size: 10px;
-background: black;
+color: gray;
+font-size: 12px;
 width: 223px;
 margin-top: 5px;
 display: flex;
 justify-content: space-between;
 `;
+const Kleinboek = styled.img`
+width: 10%
+`;
 
 function Magazineitem() {
   return (
     <>
+      {Daata.map((ijustneedone) => (
 
-      <ItemBuitenBorder>
-        <ItemBorder>
-          <Logosave src={savelogo} className="MAG_savelogo" alt="savelogo" />
-          <Magazine src={magazine1} className="MAG_magazine" alt="magazine" />
-        </ItemBorder>
-        <Datetxt>  01-08-2022
-          <img src="" alt="boek" />
-          01-08-2022
-        </Datetxt>
-      </ItemBuitenBorder>
+        <ItemBuitenBorder>
+          <ItemBorder>
+            <Logosave src={savelogo} alt="savelogo" />
+            <Magazine src={`${ijustneedone.image}`} alt={`${ijustneedone.image}`} />
+          </ItemBorder>
+          <Datetxt>  01-08-2022
+            <Kleinboek src={boek} alt="boek" />
+            01-08-2022
+          </Datetxt>
+        </ItemBuitenBorder>
+      ))}
     </>
   )
 }

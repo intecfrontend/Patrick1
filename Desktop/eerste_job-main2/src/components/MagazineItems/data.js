@@ -1,25 +1,91 @@
+import magazine1 from "./magazines_assets/mag1.jpg"
+import magazine2 from "./magazines_assets/mag2.jpg"
+import magazine3 from "./magazines_assets/mag3.jpg"
+import magazine4 from "./magazines_assets/mag4.jpg"
+import magazine5 from "./magazines_assets/mag5.jpg"
+import magazine6 from "./magazines_assets/mag6.jpg"
+import magazine7 from "./magazines_assets/mag7.jpg"
+import magazine8 from "./magazines_assets/mag8.jpg"
+import magazine9 from "./magazines_assets/mag9.jpg"
+import magazine10 from "./magazines_assets/mag10.jpg"
+import magazine11 from "./magazines_assets/mag11.jpg"
+import magazine12 from "./magazines_assets/mag12.jpg"
+import magazine13 from "./magazines_assets/mag13.jpg"
+import magazine14 from "./magazines_assets/mag14.jpg"
+
+
 import { uuid } from "uuidv4";
 export const Daata = [
   {
-    id: uuid(),
-    title: "John Dooe",
+    // 
+    // id: uuid(),
     image:
-      "https://images2.minutemediacdn.com/image/upload/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/dataimagejpegbase649j4AAQSkZJRgABAQAAAQABAAD2wBDAA-2b49722eb7658f7abb75f33e3a7b80ee.jpg",
+      `${magazine1}`,
   },
   {
-    id: uuid(),
-    title: "Victor Wayne",
+    // id: uuid(),
     image:
-      "https://vivreabruxelles.be/wp-content/uploads/2018/09/salle-de-cinema-e1538399417447.jpg",
+      `${magazine2}`,
   },
   {
-    id: uuid(),
-    title: "Jane Doe",
-    image: "https://web.umons.ac.be/app/uploads/2021/02/sport-1.jpg",
+    // id: uuid(),
+    image:
+      `${magazine3}`,
   },
-];
-export const About = [
   {
-    title: "i am khaled",
+    // id: uuid(),
+    image:
+      `${magazine4}`,
   },
+  {
+    // id: uuid(),
+    image:
+      `${magazine5}`,
+  },
+  {
+    // id: uuid(),
+    image:
+      `${magazine6}`,
+  },
+  {
+    // id: uuid(),
+    image:
+      `${magazine7}`,
+  },
+  {
+    // id: uuid(),
+    image:
+      `${magazine8}`,
+  },
+  {
+    // id: uuid(),
+    image:
+      `${magazine9}`,
+  },
+    {
+    // id: uuid(),
+    image:
+      `${magazine10}`,
+  },
+    {
+    // id: uuid(),
+    image:
+      `${magazine11}`,
+  },
+  {
+    // id: uuid(),
+    image:
+      `${magazine12}`,
+  },
+  {
+    // id: uuid(),
+    image:
+      `${magazine13}`,
+  },
+  {
+    // id: uuid(),
+    image:
+      `${magazine14}`,
+  }
 ];
+
