@@ -8,6 +8,7 @@ function Inputfield(props) {
   const bladQuery = props.BladQuery;
   const ondertxt = props.ondertxt;
   const placeholder = props.placeholder;
+  const linker = props.linker;
   // const [ondertxt, setOndertxt] = useState('Parent')
 
 
@@ -30,7 +31,7 @@ function Inputfield(props) {
           onChange={handleChange}
           value={BladQuery}
           className="ONntwk__input" placeholder={placeholder} type="text" />
-        <Link className="ONntwk__sidebutton" to={`search/${BladQuery}`}>
+        <Link className="ONntwk__sidebutton" to={`${linker}${BladQuery}`}>
 
 
           <img src={searchIcon} alt="searchIcon" className="Nntwk__searchIcon" />

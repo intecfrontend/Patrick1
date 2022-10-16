@@ -15,7 +15,7 @@ function Home(props) {
         <Header />
         <div className="ONntwk__inputcontainer">
         <img src={ONnetwerklogo} alt="ONlogo" className="ONntwk__logo" />
-        <Input placeholder={"Zoek naar een magazine of infoblad"} ondertxt={"Laatst Bekeken"}/>
+        <Input placeholder={"Zoek naar een magazine of infoblad"} linker={"search/"} ondertxt={"Laatst Bekeken"}/>
         </div>
         <div className="ONntwk__carouselwrapper ">
           <ProductGallery />

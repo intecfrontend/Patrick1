@@ -1,6 +1,6 @@
 import React from 'react'
 import ONnetwerklogo from "../assets/ONnetwerk.svg"
-import HeaderInput from "./inputfieldSolo"
+import Input from "./inputfield"
 
 
 export default function headerInput() {
@@ -9,7 +9,7 @@ export default function headerInput() {
       <div className="ONntk__header">
         <img src={ONnetwerklogo} alt="ONlogo" className="ONntwk__headerONLogo" />
         <div className="ONntwk__HeaderInputplacer">
-          <HeaderInput />
+          <Input placeholder={"Ternat"} linker={"magazines/"} ondertxt={""} />
         </div>
 
         <div className="ONntwk__buttonHeaderwrapper ">
