@@ -1,33 +1,23 @@
-// import ProductGallery from '../components/carousel/CarouselReact';
-// import Input from '../components/inputfield';
-// import Header from '../components/header';
-// import '../App.css';
 
-// function Magazines(props) {
+import HeaderInput from '../components/headerInput';
+import MagazinesCardsContainer from '../components/MagazineItems/Item-magazineCont'
 
-
-// return (
-//     <div className="App">
-
-//       <div className="ONntwk__main">
-//         <Header />
-//         <div className="ONntwk__inputwrapper">
-//         <Input placeholder={"Zoek naar een magazine of infoblad"} ondertxt={""}/>
-
-//           <Link className="ONntwk__sidebutton" to={`search/${BladQuery}`}>
+function SearchPage() {
+  return (
+    <div className="App">
+      <div className="ONntwk__main">
+        <div className="ONntwk__mainVertical ">
 
 
-//             <img src={searchIcon} alt="searchIcon" className="Nntwk__searchIcon" />
-//           </Link>
-//         </div>
-//  <div className="ONntwk__carouselwrapper ">
-//           <ProductGallery />
-//           {/* <Footer /> */}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
+          <HeaderInput />
 
 
-// export default Magazines;
+          
+          <MagazinesCardsContainer />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default SearchPage;

@@ -12,10 +12,10 @@ export default function App() {
       <Routes>
         <Route>
           <Route exact path='/' element={<Home />} />
-          <Route path="search" element={<Search />} />
-          <Route path="search/:query" element={<Search />} />          
-          <Route path="magazines" element={<Magazines/>} />
-          <Route path="magazines/:query" element={<Magazines/>} />
+          <Route exact path="/search" element={<Search />} />
+          {/* <Route path="search/:query" element={<Search />} />           */}
+          <Route exact path="/magazines" element={<Magazines/>} />
+          {/* <Route path="magazines/:query" element={<Magazines/>} /> */}
           {/* <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} /> */}
         </Route>
