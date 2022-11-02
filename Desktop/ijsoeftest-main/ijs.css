@@ -1,0 +1,126 @@
+*{
+   color: rgb(26, 25, 25);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.header{
+    position: absolute;
+  display: flex;
+  /* border: 5px solid #ff8080;
+  background-color: #ffff80; */
+  justify-content: center;
+  height: 150px;
+  width:100vw;
+  
+ 
+ 
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+   background-color: #808080;
+}
+.wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-image: url("foto1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    width: 100vw;
+}
+.background{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    
+    height: 90vh;
+    width: 100vw;}
+    
+    .menu{
+        background-color:cornflowerblue;
+        margin: 90px;
+        padding: 50px;
+        height: 90px;
+        width: 150px;
+        font-size: 18px;
+    }
+       h2{
+       width: 100%;
+       text-align:center;
+       color: white;
+       }
+    .pothoorncontainer{
+    
+        margin-top: 37vh;
+        background-color: rgba(255, 127, 80,0.7);
+        border-radius: 5px;
+        height: 90px;
+        width: 100%;
+        font-size: 18px;
+        grid-column: 2/5;
+    }
+    .pothoorn{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        margin-top: -20px;
+    }
+    .potje, .hoorntje{
+        
+        display: flex;  
+    }
+    input[type="radio"]:checked{
+    accent-color:rgb(40,171,227);
+    }
+
+    .container{
+        cursor: pointer;
+    }
+    #smaakcontainer{
+        margin-top: 30px;
+    }
+    #resultcontainer{
+        margin-top: 40px;
+    }
+    .smaken{
+        background-color: darkcyan;
+        height: 100px;
+        width: 150px;
+        font-size: 18px;
+    }
+    #aantalkiezer{
+        width: 120px;
+        text-align: center;
+    }
+    .display{
+        margin-top: 10vh;
+        background-color: rgba(255, 127, 80,0.9);
+        border-radius: 5px;
+        height: 190px;
+        width: 30%;
+        }
+        .ijsdisplay{
+            border: 5px solid lime;
+            text-align: center;
+        }
+        .containerdisplay{
+            border: 5px solid rgb(255, 0, 149);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+   
+
+
+    .butto{
+        background-color: darkgreen;
+        display: flex;
+        align-items: flex-end;
+        width: 100vw;
+        height: 14vw;
+    }
+    

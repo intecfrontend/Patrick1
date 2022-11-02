@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="ijs.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <img class="logo" src="logo2222.png" ; />
+    </div>
+
+    <form class="background" action="#">
+      <!-- <div class="menu">
+          Menu
+          <p id="vanille">Vanille 1.00 £</p>
+          <p id="chocolade">Chocolade 1.00 £</p>
+          <p id="aardbei">Aarbei 1.00 £</p>
+        </div> -->
+      <div class="pothoorncontainer">
+        <h2>Maak u keuze</h2>
+        <div class="pothoorn">
+          <div class="potje">
+            <input type="radio" name="besteling" id="potje" class="container" value="potje" />
+            <div for="potje">Potje</div>
+          </div>
+          <div class="hoorntje">
+            <input type="radio" name="besteling" id="hoorntje" class="container" />
+            <div for="hoorntje">Hoorntje</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="smaakcontainer" class="pothoorncontainer" id="smaakcontainer">
+        <h2>Kies uw smaak</h2>
+        <div class="pothoorn">
+          <select class="potje">
+            <option name="smaak" id="vanille" class="container" value="vanille">Vanille</option>
+            <option name="smaak" id="chocolade" class="container" value="chocolade">Chocolade</option>
+            <option name="smaak" id="aardbei" class="container" value="aardbei">Aardbei</option>
+
+          </select>
+          <input onchange="run()" id="aantalkiezer" type="number" min="1" max="5" placeholder="aantal bolletjes">
+
+        </div>
+        <div class="display" id="resultcontainer">
+          <h2>Uw keuze:</h2>
+          <div class="ijsdisplay">Vanille:<span id="weergever">2</span>
+            <span id="bolll">bollen</span>
+              <div class="containerdisplay">
+                <img src="potje.png" id=potje width="100" alt="">
+                <img src="hoorntje.png" id="hoorntje" width="65" alt="">
+              </div>
+
+
+
+
+
+              <!-- <div class="pothoorn">
+              <select class="potje">
+                <option
+                  name="smaak"
+                  id="vanille"
+                  class="container"
+                  value="vanille"
+                >Vanille</option>
+                <option
+                  name="smaak"
+                  id="chocolade"
+                  class="container"
+                  value="chocolade"
+                >Chocolade</option>
+                <option
+                  name="smaak"
+                  id="aardbei"
+                  class="container"
+                  value="aardbei"
+                >Aardbei</option>
+                
+              </select>
+              <input id="aantalkiezer" type="number" min="1" max="5" placeholder="aantal bolletjes" >
+              
+            </div> -->
+
+          </div>
+
+          <!-- <div class="smaken">
+          Smaken
+          <div class="vanille">
+            <label for="vanille">Vanille</label>
+            <input type="number" name="vanille" min="1" max="3" />
+          </div>
+          <div class="chocolade">
+            <label for="vanille">Chocolade</label>
+            <input type="number" name="chocolade" min="1" max="3" />
+          </div>
+          <div class="aardbei">
+            <label for="vanille">Aardbei</label>
+            <input type="number" name="aardbei" min="1" max="3" />
+          </div>
+        </div> -->
+          <!-- <div class="butto">
+        <button type="reset">Reset</button>
+        <button type="submit">bestel</button>
+        <button type="accont">accont</button>
+      </div> -->
+    </form>
+  </div>
+  <script>
+    function run() {
+      document.getElementById("weergever").value = document.getElementById("aantalkiezer").value;
+      console.log(document.getElementById("weergever").value);
+      aantalbollen = (document.getElementById("weergever").value);
+      (document.getElementById("weergever")).innerHTML = aantalbollen;
+      if (aantalbollen == 1) {
+        // alert("only 1?")
+        (document.getElementById("bolll")).innerHTML = "bol"
+      } else {
+        (document.getElementById("bolll")).innerHTML = "bollqqq"
+      }
+      console.log("aantalbollen " + aantalbollen);
+
+    }
+  </script>
+</body>
+
+</html>
