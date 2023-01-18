@@ -11,6 +11,7 @@ import Dutch from "../../img/dutch.jfif";
 import * as React from 'react';
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
+import Select from '@mui/material/Select';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
@@ -27,11 +28,23 @@ class Navbar extends Component {
     this.setState({ clicked: !this.state.clicked });
   };
 
+handelChange = (e) => {
+console.log(e.target.value)
+ if(e.target.value==="eng"){
+  this.props.eng()
+ }
 
+ if(e.target.value==="dutch"){
+  this.props.dutch()
+ }
+
+}
 
 
 
   render() {
+
+
     return (
       <nav>
         <a>
@@ -65,18 +78,25 @@ class Navbar extends Component {
             defaultValue="eng"
             name="radio-buttons-group"
           >
-          <div className="">
-
-          <EventBind/>
+            <div className="">
 
 
 
 
 
 
+              <select onChange={this.handelChange}>
+                <option value="eng">FR</option>
+                <option value="dutch">ES</option>
+              </select>
 
-            <FormControlLabel duration={1000} id="FormControlLabel" value="eng" control={<Radio />} label={translate('language')} onClick={this.props.eng} />
-            <FormControlLabel duration={1000} id="FormControlLabel" value="dutch" control={<Radio />} label={translate('language2')} onClick={this.props.dutch} />
+              <FormControlLabel value="eng" control=<div>En</div> onClick={this.props.eng} />
+              <FormControlLabel value="dutch" control=<div>Nl</div> onClick={this.props.dutch} />
+
+              <FormControlLabel duration={1000} className="FormControlLabel" value="eng" control=<div>En</div> onClick={this.props.eng} />
+              <FormControlLabel duration={1000} className="FormControlLabel" value="dutch" control=<div>Nl</div> onClick={this.props.dutch} />
+
+
             </div>
 
           </RadioGroup>
