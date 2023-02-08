@@ -1,0 +1,140 @@
+/* https://www.youtube.com/watch?v=IiUg-2dAd4A&t=312s */
+
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@700&display=swap');
+
+* {
+  margin: 0;
+}
+:root {
+  --blue: rgb(26, 57, 87);
+  --white: rgb(236, 236, 236);
+}
+.App {
+  display: flex;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+  font-weight: var(--font-weight);
+  transition: background 0.3s ease-in-out, color 0.6s ease-in-out;
+}
+
+body.light {
+  --background-color: var(--white);
+  --text-color: var(--blue);
+  --animation-color: var(--blue)!important;
+}
+
+body.dark {
+  --background-color: var(--blue);
+  --text-color: var(--white);
+  --animation-color: var(--white)!important;
+}
+/* repeated */
+
+
+.outerSide {
+  position: relative;
+  display: flex;
+  font-family: 'Saira Extra Condensed';
+  letter-spacing: 2.5px;
+}
+
+.rightSide {
+  left: calc(200px + 5vw);
+  max-width: 80vw;
+  position: absolute;
+  max-height: 100vh;
+}
+
+.titleContainer {
+  margin-left: 10vw;
+  margin-top: 15vh;
+}
+
+.nameTitle {
+  color: black;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc(38px + 6vw);
+}
+
+.brown {
+  color: var(--text-color);
+}
+
+
+.hometext {
+  width: calc(80vw - 280px);
+  margin-top: 30px;
+  font-size: calc(18px + 2vw);
+  height: 30vh;
+
+}
+
+.social-icons {
+  width: calc(40vw);
+  display: flex;
+  justify-content: space-around;
+
+}
+
+/* 
+.social-icon:hover {
+  background-color: #7c0cbc;
+  box-shadow: rgba(0, 0, 0, 0.924) 0px 5px 17px;
+} */
+
+.social-icon.mail:hover {
+  background-color: #FBBC05;
+  box-shadow: rgba(0, 0, 0, 0.924) 0px 5px 17px;
+  transform: rotate(0deg);
+}
+
+.social-icon.linkedin:hover {
+  background-color: #0072b1;
+  box-shadow: rgba(0, 0, 0, 0.924) 0px 5px 17px;
+  transform: rotate(0deg);
+}
+
+.social-icon.github:hover {
+  background-color: #171515;
+  box-shadow: rgba(0, 0, 0, 0.924) 0px 5px 17px;
+  transform: rotate(0deg);
+}
+
+.social-icon.whatsapp:hover {
+  background-color: #25D366;
+  box-shadow: rgba(0, 0, 0, 0.924) 0px 5px 17px;
+  transform: rotate(0deg);
+}
+
+.social-icon.google:hover {
+  background-color: #D5473A;
+  box-shadow: rgba(0, 0, 0, 0.924) 0px 5px 17px;
+  transform: rotate(0deg);
+}
+
+.social-icon {
+  color: white;
+  background: rgba(0, 0, 0, 0.521);
+  border-radius: 60% 40% 36% 64% / 56% 59% 41% 44%;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  height: 70px;
+  transform: rotate(1440deg);
+  transition: 0.5s all ease;
+}
+
+.headTitle {
+  font-size: calc(22px + 2vw);
+}
+
+.subTitle {
+  font-size: calc(18px + 3vw);
+}

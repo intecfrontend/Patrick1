@@ -1,0 +1,33 @@
+/* https://www.youtube.com/watch?v=IiUg-2dAd4A&t=312s */
+
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@700&display=swap');
+
+* {
+  margin: 0;
+}
+:root {
+  --blue: rgb(26, 57, 87);
+  --white: rgb(236, 236, 236);
+}
+.App {
+  display: flex;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+  font-weight: var(--font-weight);
+  transition: background 0.3s ease-in-out, color 0.6s ease-in-out;
+}
+
+body.light {
+  --background-color: var(--white);
+  --text-color: var(--blue);
+  --animation-color: var(--blue);
+}
+
+body.dark {
+  --background-color: var(--blue);
+  --text-color: var(--white);
+  --animation-color: var(--white);
+}
